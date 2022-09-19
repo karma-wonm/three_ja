@@ -13,7 +13,7 @@ public class Main {
             end = start + plus;
             System.out.println("Баланс счета будет составлять " + end );
         } else end = (plus/100) + start + plus;
-    System.out.println("Баланс счета будет составлять " + end);
+        System.out.println("Баланс счета будет составлять " + end);
         System.out.println("Бонус составил " + plus/100);
 
     }
