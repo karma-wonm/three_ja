@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -9,12 +10,14 @@ public class Main {
         System.out.println("Введите сумму, на которую хотите пополнить счёт");
         Scanner scan = new Scanner(System.in);
         plus = scanner.nextInt();
-        if(plus < thousand){
+        if (plus < thousand) {
             end = start + plus;
-            System.out.println("Баланс счета будет составлять " + end );
-        } else end = (plus/100) + start + plus;
-        System.out.println("Баланс счета будет составлять " + end);
-        System.out.println("Бонус составил " + plus/100);
+            System.out.println("Баланс счета будет составлять " + end);
+        } else {
+            end = (plus / 100) + start + plus;
+            System.out.println("Баланс счета будет составлять " + end);
+            System.out.println("Бонус составил " + plus / 100);
+        }
 
     }
 }
